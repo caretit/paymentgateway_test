@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">Mastercard(MPGS) Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form" />
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position='inside'>
+                <group attrs="{'invisible': [('code', '!=', 'mastercard')]}">
+                    <field name="merchant_id" />
+                    <field name="password" password="True" />
+                    <field name="payment_method" />
+                    <field name="mpgs_region" />
+                    <field name="mpgs_currency" widget="selection" string="Currency" />
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,407 @@
+<div class="container position-relative">
+    <div class="first-parent position-absolute d-none d-lg-block" style="width:100vw;height:100%;background-color: #f1f1f1;margin-left:calc((1080px - 100vw) / 2);"></div>
+    <div id="wrapwrap" class="o_iot mt64">
+        <section class="o_iot_cases d-none d-lg-block" style="background-color: #f2f2f2;">
+            <div class="container">
+                <div class="row justify-content-between no-gutters">
+                    <div class="col-lg-4">
+                        <ul class="o_iot_cases_ul nav flex-column mt-1" role="tablist" aria-label="Connected with">
+                            <li class="position-relative">
+                                <span class="position-relative bg-white border" style="min-width:270px;font-family:'Montserrat';font-size:15px;padding: 7px 14px 4px 14px;border-bottom:0px !important;margin:0px;display:inline-block;background-color: #ebeeff !important;">
+                                    <span style="font-weight: 500;">E-commerce payment with </span>
+                                    <div style="font-size: 23px;font-weight: 700;color: #5c77fc;margin-top: -4px;">Mastercard(MPGS)</div>
+                                </span>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#payment-configuration" role="tab" data-toggle="tab" class="p-0 d-block active position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Configuration
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a class="p-0 d-block position-relative" href="#product-addto-cart" role="tab" data-toggle="tab">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 1 - Product Add to Cart
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#product-checkout" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 2 - Checkout
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#pay-now" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 3 - Pay Now
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#mpgs-lightbox" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 4(A) - Payment Page<br/>(Lightbox)
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#mpgs-redirect" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 4(B) - Redirect to<br/>Payment Page
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#shop-confirmation" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 5 - Order Confirmation
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#shop-payment-transaction" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 6 - Transaction Details
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 o_iot_cases_tabs bg-white p-3" style="border-top: 3px solid #5c77fc">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="payment-configuration">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Need to set the required credential fields.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/payment-configuration.png" class="img img-fluid mt-3 border" style="border-color: #efecec !important;" />
+                                        <small class="text-muted text-warning mt-3" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #9f7d1f !important;">
+                                            <i>Supported currency you need to set as per your Mastercard(MPGS) acount</i>
+                                        </small>
+                                        <small class="text-muted text-warning mt-3" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #9f7d1f !important;">
+                                            <i>You should to set the option for the payment, either Lightbox(Popup within odoo) or Payment Page(Redirect to Mastercard)</i>
+                                        </small>
+                                        <small class="text-muted text-warning mt-3" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #9f7d1f !important;">
+                                            <i>This module is supporting to v62 of Mastercard(MPGS).</i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="product-addto-cart">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Add product into cart to complete the order.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/add-to-cart.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="product-checkout">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Process checkout to complete the order.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/process-checkout.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="pay-now">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Pay now with the Mastercard(MPGS) payment method.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/pay-now.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="mpgs-lightbox">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Popup will be open to complete the payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/mpgs-lightbox.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="mpgs-redirect">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Redirect to Mastercard(MPGS) payment page to complete the payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/mpgs-redirect.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="shop-confirmation">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Order will be confirmed after successful payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/shop-confirmation.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="shop-payment-transaction">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Transaction details for the successful payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/shop-payment-transaction.png" class="img img-fluid mt-3 border" style="border-color: #efecec" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="wrapwrap" class="o_iot mt64">
+        <section class="o_iot_cases d-none d-lg-block" style="background-color: #f2f2f2;">
+            <div class="container">
+                <div class="row justify-content-between no-gutters">
+                    <div class="col-lg-4">
+                        <ul class="o_iot_cases_ul nav flex-column mt-1" role="tablist" aria-label="Connected with">
+                            <li class="position-relative">
+                                <span class="position-relative bg-white border" style="min-width:270px;font-family:'Montserrat';font-size:15px;padding: 7px 14px 4px 14px;border-bottom:0px !important;margin:0px;display:inline-block;background-color: #ebeeff !important;">
+                                    <span style="font-weight: 500;">Portal payment with </span>
+                                    <div style="font-size: 23px;font-weight: 700;color: #5c77fc;margin-top: -4px;">Mastercard(MPGS)</div>
+                                </span>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-payment-configuration" role="tab" data-toggle="tab" class="p-0 d-block active position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Configuration
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-payment" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 1 - Portal Payment
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-pay-now" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 2 - Pay Now
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-payment-lb-page" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 3(A) - Payment Page<br/>(Lightbox)
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-payment-page" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 3(B) - Redirect to<br/>Payment Page
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-confirmation" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 4 - Paid Invoice
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <a id="cameras-tab" href="#portal-payment-transaction" role="tab" data-toggle="tab" class="p-0 d-block position-relative">
+                                    <span class="position-relative bg-white border" style="min-width: 270px;font-family: 'Montserrat';font-size: 15px;padding: 7px 5px 7px 13px; border-bottom: 0px !important; margin: 0px;min-width: 270px;display: inline-block;">
+                                        <i class="fa fa-angle-right float-right" style="color: #5c77fc;margin-right: 6px;margin-top: 3px;"> </i>
+                                        Step 5 - Transaction Details
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 o_iot_cases_tabs bg-white p-3" style="border-top: 3px solid #5c77fc">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active show" id="portal-payment-configuration">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Need to set the required credential fields.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/payment-configuration.png" class="img img-fluid mt-3 border" style="border-color: #efecec !important;" />
+                                        <small class="text-muted text-warning mt-3" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #9f7d1f !important;">
+                                            <i>Supported currency you need to set as per your Mastercard(MPGS) acount</i>
+                                        </small>
+                                        <small class="text-muted text-warning mt-3" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #9f7d1f !important;">
+                                            <i>You should to set the option for the payment, either Lightbox(Popup within odoo) or Payment Page(Redirect to Mastercard)</i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-payment">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Portal user can also able to pay invoice with Mastercard(MPGS) payment method.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-pay-now.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-pay-now">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Select Mastercard(MPGS) payment mehtod to process the payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-pay-with.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-payment-page">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                You will be redirect to Mastercard(MPGS) page to complete the payment. If method as "Payment Page" is set in payment configuration.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-mpgs-page.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-payment-lb-page">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Mastercard(MPGS) popup wil be open to complete the payment. If method as "Lightbox" is set in payment configuration.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-mpgs-lb-page.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-confirmation">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Invoice will be paid after successful payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-confirmation.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="portal-payment-transaction">
+                                <div class="row justify-content-around align-items-center" style="min-height:230px">
+                                    <div class="col-sm-12 text-center">
+                                        <small class="text-muted" style="font-size: 13px;display: block;font-family: 'Montserrat';font-weight: 500;color: #8b9196 !important;">
+                                            <blockquote class="blockquote">
+                                                Transaction details for the successful portal payment.
+                                            </blockquote>
+                                        </small>
+                                        <img src="images/portal-payment-transaction.png" class="img img-fluid mt-3" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="row my-4 p-3 pb-2 position-relative">
+        <div class="col-12 p-4 shadow-sm bg-white">
+            <h2>Changelog</h2>
+            <hr class="mb-4 mt-0">
+            <h2 class="h4 pb-2">
+                <span style="color:#00A09D;" class="pr-2">16.0.1.0</span>-<span class="pl-2">Nov 07, 2022</span>
+            </h2>
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-start mb-3">
+                    Initial release for version 16.0
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="position-relative mb-5">
+        <div class="row mb-3 shadow-sm bg-white" style="margin:0px;">
+            <div class="col-md-12 p-0 overflow-hidden">
+                <div class="row shadow p-3 pb-2 overflow-hidden o_gradient" style="border-radius: 7px; border: 1px solid #020202 !important; ">
+                    <div class="col-12">
+                        <div class="" style="color:white;padding: 20px;padding-bottom: 0;">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 style="font-family: lato;color: #fff;margin-bottom: 0;"> Need Help ? </h1>
+                                    <div class="row text-center mt32">
+                                        <div class="col-12 col-md-6 text-center">
+                                            <a href="mailto:support@mcss.odoo.com" target="_blank" style="margin-bottom: 25px;border: 1px solid rgba(255, 255, 255, 0.25); display: block;border-radius: 7px;padding: 15px;width: 100%;">
+                                                <img style="max-width: 96px;" class="img img-fluid" src="assets/email.png">
+                                                <b style="display: block;color: #fff;margin-top: 15px;">Contact Us </b>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-md-6 text-center">
+                                            <a href="skype:live:.cid.5937366d819d10ec?chat" target="_blank" style="margin-bottom: 25px;border: 1px solid rgba(255, 255, 255, 0.25);display: block;border-radius: 7px;padding: 15px;width: 100%;">
+                                                <img style="max-width: 67px;" class="img img-fluid" src="assets/skype.png">
+                                                <b style="display: block;color: #fff;margin-top: 15px;">Chat with Us </b>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

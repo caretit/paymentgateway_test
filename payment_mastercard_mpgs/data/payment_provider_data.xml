@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="payment_icon_mada" model="payment.icon">
+        <field name="sequence">100</field>
+        <field name="name">MADA</field>
+        <field name="image" type="base64" file="payment_mastercard_mpgs/static/src/img/mada.png"/>
+    </record>
+    <record id="payment_providet_mastercard" model="payment.provider">
+        <field name="name">Mastercard(MPGS)</field>
+        <field name="display_as">Mastercard(MPGS)</field>
+        <field name="image_128" type="base64" file="payment_mastercard_mpgs/static/description/icon.png"/>
+        <field name="module_id" ref="base.module_payment_mastercard_mpgs"/>
+        <field name="code">mastercard</field>
+        <field name="merchant_id">TEST1234567890</field>
+        <field name="password">********************************</field>
+        <field name="redirect_form_view_id" ref="redirect_form" />
+        <field name="payment_icon_ids"
+               eval="[(6, 0, [
+                   ref('payment.payment_icon_cc_mastercard'),
+                   ref('payment.payment_icon_cc_visa'),
+                   ref('payment_mastercard_mpgs.payment_icon_mada'),
+               ])]"/>
+    </record>
+</odoo>
